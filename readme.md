@@ -13,9 +13,9 @@ In project used PostgresSQL, Express, CRUD API.
 3. Initial you server.
    ![initial server](./img/initial_server.png)
 
-4. Run terminal db
+4. Run terminal db.
    ![Run terminal db](./img/run_terminal_db.png)
-5. In psql terminal paste
+5. In psql terminal paste:
 
    <pre>
       CREATE DATABASE same_database;
@@ -23,11 +23,11 @@ In project used PostgresSQL, Express, CRUD API.
 
    ![Run terminal db](./img/create_db.png)
 
-   You must see there
+   You must see there:
 
    ![Postman example](./img/postgress.png)
 
-6. Past in psql terminal you db for create users table:
+6. Past in same_database psql terminal :
    <pre>
       CREATE TYPE userRoles AS ENUM ('Admin', 'User');
       ALTER TABLE users ADD FOREIGN KEY (profileId) REFERENCES profiles(id);
