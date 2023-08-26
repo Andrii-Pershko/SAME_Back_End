@@ -10,7 +10,7 @@ In project used PostgresSQL, Express, CRUD API.
    You must see there
    ![Postman examole](./img/postgress.png)
 
-3. Past in psql terminal for create users table:
+3. Past in psql terminal you db for create users table:
    <pre>
       CREATE TYPE userRoles AS ENUM ('Admin', 'User');
       ALTER TABLE users ADD FOREIGN KEY (profileId) REFERENCES profiles(id);
