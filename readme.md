@@ -4,7 +4,8 @@ In project use PostgresSQL, Express, CRUD API.
 
 # Start project;
 1. In terminal run "npm i"
-2. Create in Postgres you db;
+2. Create in Postgres you db with name same_database;
+
 3. Past in psql terminal for create users table:
    <pre>
       CREATE TYPE userRoles AS ENUM ('Admin', 'User');
