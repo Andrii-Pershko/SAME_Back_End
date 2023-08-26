@@ -34,9 +34,9 @@ In project used PostgresSQL, Express, CRUD API.
    );
    </pre>
 
-   Wait string CREATE TABLE
+   Wait string CREATE TABLE and run you db in postgres.
 
-5. In terminal project past "npm start dev" for start developer mode.
+6. In terminal project past "npm start dev" for start developer mode.
    You can see in terminal:
    <pre>
       Connected to the database
