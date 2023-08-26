@@ -1,7 +1,10 @@
-# Start project;
+# Project information
+This project create for SAME compani how test task project.
+In project use PostgresSQL, Express, CRUD API.
 
+# Start project;
 1. In terminal run "npm i"
-2. Create in postgres you db;
+2. Create in Postgres you db;
 3. Past in psql terminal for create users table:
    <pre>
       CREATE TYPE userRoles AS ENUM ('Admin', 'User');
@@ -44,20 +47,31 @@ Example request:
 - all users GET "http://localhost:8080/api" no body.
 - all users by role GET "http://localhost:8080/api/:role" no body.
 - update any property PUT "http://localhost:8080/api/:id" body:
-    <pre>
-        {
-  "users": {}
-  "profile":{}
-  }
-  </pre>
+It is need that there is 1 field in the request, user or profile, and you can specify only the data that is in the example
+<pre>
+    {
+        "users": {
+            "username": "Example username",
+            "email": "Example email",
+            "state": "Admin or User",
+        }
+        "profile":{
+             "firstname": "Example firstname",
+             "lastname": "Example lastname",
+             "role": "Male or Female or Other"
+        }
+    }
+</pre>
 - create user POST "http://localhost:8080/api" body:
 <pre>
   {
-  "username": "Example username",
-  "email": "Example email",
-  "firstname": "Example firstname",
-  "lastname": "Example lastname",
-  "state": "Admin or User",
-  "role": "Male or Female or Other"
+    "username": "Example username",
+    "email": "Example email",
+    "state": "Admin or User",
+    "firstname": "Example firstname",
+    "lastname": "Example lastname",
+    "role": "Male or Female or Other"
   }
 </pre>
+
+- delete user POST "http://localhost:8080/api/:id" no body.
