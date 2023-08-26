@@ -1,6 +1,6 @@
 # Project information
 This project create for SAME compani how test task project.
-In project use PostgresSQL, Express, CRUD API.
+In project used PostgresSQL, Express, CRUD API.
 
 # Start project;
 1. In terminal run "npm i"
@@ -35,13 +35,18 @@ In project use PostgresSQL, Express, CRUD API.
    );
    </pre>
 
-   Wait string CREATE TABLE
+   Wait string CREATE TABLE and run you db in postgres.
 
-5. In terminal project past "npm start dev" for start developer mode.
+6. In terminal project past "npm start dev" for start developer mode.
+   You can see in terminal:
+   <pre>
+      Connected to the database
+      server start on port 8080
+   </pre>
 
 # Use project
 
-For use project you can use "Postman" last version.
+For test project you can use "Postman" last version.
 
 Example request:
 
