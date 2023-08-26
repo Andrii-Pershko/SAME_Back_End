@@ -81,11 +81,11 @@ It is need that there is 1 field in the request, user or profile, and you can sp
             "username": "Example username",
             "email": "Example email",
             "role": "Admin or User",
-        }
+        },
         "profile":{
              "firstname": "Example firstname",
              "lastname": "Example lastname",
-             "state": "Male or Female or Other" "Admin or User"
+             "state": "Male or Female or Other"
         }
     }
 </pre>
