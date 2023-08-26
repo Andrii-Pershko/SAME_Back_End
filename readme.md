@@ -45,7 +45,7 @@ In project used PostgresSQL, Express, CRUD API.
 
 # Use project
 
-For use project you can use "Postman" last version.
+For test project you can use "Postman" last version.
 
 Example request:
 
