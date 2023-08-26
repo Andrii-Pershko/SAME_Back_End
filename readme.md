@@ -5,7 +5,7 @@ In project used PostgresSQL, Express, CRUD API.
 
 # Start project;
 
-1. In terminal run "npm i"
+1. In project terminal run "npm i"
 2. Create in Postgres you db with name same_database.
    You must see there
    ![Postman examole](./img/postgress.png)
