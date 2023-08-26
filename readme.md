@@ -1,10 +1,14 @@
 # Project information
+
 This project create for SAME compani how test task project.
 In project used PostgresSQL, Express, CRUD API.
 
 # Start project;
+
 1. In terminal run "npm i"
 2. Create in Postgres you db with name same_database;
+   You must see there
+   ![Postman examole](./img/postgress.png)
 
 3. Past in psql terminal for create users table:
    <pre>
@@ -37,7 +41,7 @@ In project used PostgresSQL, Express, CRUD API.
 
    Wait string CREATE TABLE and run you db in postgres.
 
-6. In terminal project past "npm start dev" for start developer mode.
+5. In terminal project past "npm start dev" for start developer mode.
    You can see in terminal:
    <pre>
       Connected to the database
