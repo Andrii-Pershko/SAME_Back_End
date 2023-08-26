@@ -94,10 +94,10 @@ It is need that there is 1 field in the request, user or profile, and you can sp
   {
     "username": "Example username",
     "email": "Example email",
-    "state": "Admin or User",
+    "role": "Admin or User",
     "firstname": "Example firstname",
     "lastname": "Example lastname",
-    "role": "Male or Female or Other"
+    "state": "Male or Female or Other"
   }
 </pre>
 
