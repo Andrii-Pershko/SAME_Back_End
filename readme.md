@@ -12,15 +12,22 @@ In project used PostgresSQL, Express, CRUD API.
    ![create server](./img/create_server.png)
 3. Initial you server.
    ![initial server](./img/initial_server.png)
-4. In psql terminal paste
+
+4. Run terminal db
+   ![Run terminal db](./img/run_terminal_db.png)
+5. In psql terminal paste
+
    <pre>
       CREATE DATABASE same_database;
    </pre>
 
+   ![Run terminal db](./img/create_db.png)
+
    You must see there
+
    ![Postman example](./img/postgress.png)
 
-5. Past in psql terminal you db for create users table:
+6. Past in psql terminal you db for create users table:
    <pre>
       CREATE TYPE userRoles AS ENUM ('Admin', 'User');
       ALTER TABLE users ADD FOREIGN KEY (profileId) REFERENCES profiles(id);
@@ -37,7 +44,7 @@ In project used PostgresSQL, Express, CRUD API.
 
    Wait string CREATE TABLE
 
-6. Past in psql terminal for create profile table:
+7. Past in psql terminal for create profile table:
 
    <pre>
    CREATE TYPE state_types AS ENUM ('Male', 'Female', 'Other');
@@ -51,7 +58,7 @@ In project used PostgresSQL, Express, CRUD API.
 
    Wait string CREATE TABLE and run you db in postgres.
 
-7. In terminal project past "npm start dev" for start developer mode.
+8. In terminal project past "npm start dev" for start developer mode.
    You can see in terminal:
    <pre>
       Connected to the database
