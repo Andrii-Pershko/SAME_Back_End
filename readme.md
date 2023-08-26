@@ -80,12 +80,12 @@ It is need that there is 1 field in the request, user or profile, and you can sp
         "users": {
             "username": "Example username",
             "email": "Example email",
-            "state": "Admin or User",
+            "role": "Admin or User",
         }
         "profile":{
              "firstname": "Example firstname",
              "lastname": "Example lastname",
-             "role": "Male or Female or Other"
+             "state": "Male or Female or Other" "Admin or User"
         }
     }
 </pre>
