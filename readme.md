@@ -19,16 +19,15 @@
    Wait string CREATE TABLE
 
 4. Past in psql terminal for create profile table:
-
    CREATE TYPE state_types AS ENUM ('Male', 'Female', 'Other');
-
+   '''
    create TABLE profile (
    id Serial PRIMARY KEY,
    firstname VARCHAR(255),
    lastname VARCHAR(255),
    state state_types
    );
-
+   '''
    Wait string CREATE TABLE
 
 5. In terminal project past "npm start dev" for start developer mode.
