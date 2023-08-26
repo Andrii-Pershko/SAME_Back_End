@@ -11,7 +11,4 @@ client
   })
   .catch((error) => {
     console.error("Error:", error);
-  })
-  .finally(() => {
-    // client.end();
   });
