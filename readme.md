@@ -37,6 +37,11 @@ In project used PostgresSQL, Express, CRUD API.
    Wait string CREATE TABLE
 
 5. In terminal project past "npm start dev" for start developer mode.
+   You can see in terminal:
+   <pre>
+      Connected to the database
+      server start on port 8080
+   </pre>
 
 # Use project
 
