@@ -1,6 +1,6 @@
 # Project information
 This project create for SAME compani how test task project.
-In project use PostgresSQL, Express, CRUD API.
+In project used PostgresSQL, Express, CRUD API.
 
 # Start project;
 1. In terminal run "npm i"
