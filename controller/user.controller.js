@@ -112,7 +112,7 @@ const userUpdate = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
-  const { userName, firstName, lastName, email, role, state } = req.body;
+  const { username, firstname, lastname, email, role, state } = req.body;
 
   try {
     const insertProfileQuery = `
@@ -122,8 +122,8 @@ const createUser = async (req, res) => {
     `;
 
     const profileResult = await db.query(insertProfileQuery, [
-      firstName,
-      lastName,
+      firstname,
+      lastname,
       state,
     ]);
     const profileId = profileResult.rows[0].id;
@@ -133,7 +133,7 @@ const createUser = async (req, res) => {
       VALUES ($1, $2, $3, $4, $5);
     `;
 
-    const valuesUsersData = [userName, email, role, new Date(), profileId];
+    const valuesUsersData = [username, email, role, new Date(), profileId];
 
     await db.query(insertUserQuery, valuesUsersData);
 

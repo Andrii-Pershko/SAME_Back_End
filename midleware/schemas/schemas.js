@@ -1,11 +1,11 @@
 const Joi = require("joi");
 
 const newUserSchema = Joi.object({
-  userName: Joi.string().required(),
+  username: Joi.string().required(),
   email: Joi.string().required(),
   role: Joi.string().required(),
-  firstName: Joi.string().required(),
-  lastName: Joi.string().required(),
+  firstname: Joi.string().required(),
+  lastname: Joi.string().required(),
   state: Joi.string().required(),
 });
 
