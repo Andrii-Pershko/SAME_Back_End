@@ -77,7 +77,7 @@ Example request:
 It is need that there is 1 field in the request, user or profile, and you can specify only the data that is in the example
 <pre>
     {
-        "users": {
+        "user": {
             "username": "Example username",
             "email": "Example email",
             "role": "Admin or User",
