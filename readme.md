@@ -72,7 +72,21 @@ For test project you can use "Postman" last version.
 Example request:
 
 - all users GET "http://localhost:8080/api" no body.
+  
 - all users by role GET "http://localhost:8080/api/:role" no body.
+  
+- create user POST "http://localhost:8080/api" body:
+<pre>
+  {
+    "username": "Example username",
+    "email": "Example email",
+    "role": "Admin or User",
+    "firstname": "Example firstname",
+    "lastname": "Example lastname",
+    "state": "Male or Female or Other"
+  }
+</pre>
+
 - update any property PUT "http://localhost:8080/api/:id" body:
 It is need that there is 1 field in the request, user or profile, and you can specify only the data that is in the example
 <pre>
@@ -88,17 +102,6 @@ It is need that there is 1 field in the request, user or profile, and you can sp
              "state": "Male or Female or Other"
         }
     }
-</pre>
-- create user POST "http://localhost:8080/api" body:
-<pre>
-  {
-    "username": "Example username",
-    "email": "Example email",
-    "role": "Admin or User",
-    "firstname": "Example firstname",
-    "lastname": "Example lastname",
-    "state": "Male or Female or Other"
-  }
 </pre>
 
 - delete user POST "http://localhost:8080/api/:id" no body.
