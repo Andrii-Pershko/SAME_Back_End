@@ -13,9 +13,9 @@ In project used PostgresSQL, Express, CRUD API.
 3. Initial you server.
    ![initial server](./img/initial_server.png)
 
-4. Run terminal db
+4. Run terminal db.
    ![Run terminal db](./img/run_terminal_db.png)
-5. In psql terminal paste
+5. In psql terminal paste:
 
    <pre>
       CREATE DATABASE same_database;
@@ -23,11 +23,11 @@ In project used PostgresSQL, Express, CRUD API.
 
    ![Run terminal db](./img/create_db.png)
 
-   You must see there
+   You must see there:
 
    ![Postman example](./img/postgress.png)
 
-6. Past in psql terminal you db for create users table:
+6. Past in same_database psql terminal :
    <pre>
       CREATE TYPE userRoles AS ENUM ('Admin', 'User');
       ALTER TABLE users ADD FOREIGN KEY (profileId) REFERENCES profiles(id);
@@ -72,33 +72,36 @@ For test project you can use "Postman" last version.
 Example request:
 
 - all users GET "http://localhost:8080/api" no body.
+  
 - all users by role GET "http://localhost:8080/api/:role" no body.
-- update any property PUT "http://localhost:8080/api/:id" body:
-It is need that there is 1 field in the request, user or profile, and you can specify only the data that is in the example
-<pre>
-    {
-        "users": {
-            "username": "Example username",
-            "email": "Example email",
-            "state": "Admin or User",
-        }
-        "profile":{
-             "firstname": "Example firstname",
-             "lastname": "Example lastname",
-             "role": "Male or Female or Other"
-        }
-    }
-</pre>
+  
 - create user POST "http://localhost:8080/api" body:
 <pre>
   {
     "username": "Example username",
     "email": "Example email",
-    "state": "Admin or User",
+    "role": "Admin or User",
     "firstname": "Example firstname",
     "lastname": "Example lastname",
-    "role": "Male or Female or Other"
+    "state": "Male or Female or Other"
   }
+</pre>
+
+- update any property PUT "http://localhost:8080/api/:id" body:
+It is need that there is 1 field in the request, user or profile, and you can specify only the data that is in the example
+<pre>
+    {
+        "user": {
+            "username": "Example username",
+            "email": "Example email",
+            "role": "Admin or User",
+        },
+        "profile":{
+             "firstname": "Example firstname",
+             "lastname": "Example lastname",
+             "state": "Male or Female or Other"
+        }
+    }
 </pre>
 
 - delete user POST "http://localhost:8080/api/:id" no body.
